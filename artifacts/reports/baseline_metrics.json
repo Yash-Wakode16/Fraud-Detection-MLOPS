@@ -1,0 +1,31 @@
+{
+  "model": "LogisticRegression",
+  "dataset": "PaySim 10% sample",
+  "threshold": 0.5,
+  "training_rows": 509009,
+  "testing_rows": 127253,
+  "training_fraud_cases": 673,
+  "testing_fraud_cases": 168,
+  "training_seconds": 1.12,
+  "precision": 0.02488722974023954,
+  "recall": 0.9523809523809523,
+  "f1_score": 0.04850689707442777,
+  "pr_auc_average_precision": 0.537630550389008,
+  "roc_auc": 0.9913073739548147,
+  "true_negatives": 120816,
+  "false_positives": 6269,
+  "false_negatives": 8,
+  "true_positives": 160,
+  "feature_columns": [
+    "step",
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "errorBalanceOrig",
+    "errorBalanceDest",
+    "type"
+  ],
+  "note": "Threshold 0.50 is an initial baseline, not a final business threshold. Threshold tuning must use validation data, not the test set. Balance-derived features rely on post-transaction balances and require a production data-availability review."
+}

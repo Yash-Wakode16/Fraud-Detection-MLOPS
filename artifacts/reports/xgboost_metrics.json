@@ -1,0 +1,30 @@
+{
+  "model": "XGBoost",
+  "threshold": 0.9998006224632263,
+  "threshold_selection": "maximum validation F1-score",
+  "training_rows": 509009,
+  "validation_rows": 101802,
+  "testing_rows": 127253,
+  "training_seconds_final_model": 5.41,
+  "precision": 1.0,
+  "recall": 0.9761904761904762,
+  "f1_score": 0.9879518072289156,
+  "pr_auc_average_precision": 1.0,
+  "roc_auc": 1.0,
+  "true_negatives": 127085,
+  "false_positives": 0,
+  "false_negatives": 4,
+  "true_positives": 164,
+  "feature_columns": [
+    "step",
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "errorBalanceOrig",
+    "errorBalanceDest",
+    "type"
+  ],
+  "note": "Threshold selected on validation data. The test set was not used for threshold selection. Balance-derived features use post-transaction balances and require a deployment availability review."
+}

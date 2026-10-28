@@ -1,0 +1,5 @@
+{
+  "threshold": 0.9998006224632263,
+  "selection_method": "maximum validation F1-score",
+  "random_state": 42
+}

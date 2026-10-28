@@ -1,0 +1,19 @@
+{
+  "model": "LogisticRegression",
+  "threshold": 0.9997875894328813,
+  "threshold_selection": "maximum validation F1-score",
+  "training_rows": 509009,
+  "validation_rows": 101802,
+  "testing_rows": 127253,
+  "training_seconds": 1.05,
+  "precision": 0.75,
+  "recall": 0.44642857142857145,
+  "f1_score": 0.5597014925373134,
+  "pr_auc_average_precision": 0.537630550389008,
+  "roc_auc": 0.9913073739548147,
+  "true_negatives": 127060,
+  "false_positives": 25,
+  "false_negatives": 93,
+  "true_positives": 75,
+  "note": "Threshold selected using validation data, not the test set. PaySim post-transaction balance features require availability review before real-time deployment."
+}

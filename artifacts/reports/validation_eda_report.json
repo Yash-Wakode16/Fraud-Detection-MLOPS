@@ -1,0 +1,48 @@
+{
+  "dataset_file": "C:\\Users\\ywako\\Desktop\\AI Projects store\\fraud-detection-mlops\\fraud-detection-mlops\\data\\raw\\PS_20174392719_1491204439457_log.csv",
+  "total_rows": 6362620,
+  "columns": [
+    "step",
+    "type",
+    "amount",
+    "nameOrig",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "nameDest",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "isFraud",
+    "isFlaggedFraud"
+  ],
+  "missing_values": {
+    "step": 0,
+    "type": 0,
+    "amount": 0,
+    "nameOrig": 0,
+    "oldbalanceOrg": 0,
+    "newbalanceOrig": 0,
+    "nameDest": 0,
+    "oldbalanceDest": 0,
+    "newbalanceDest": 0,
+    "isFraud": 0,
+    "isFlaggedFraud": 0
+  },
+  "fraud_class_counts": {
+    "0": 6354407,
+    "1": 8213
+  },
+  "transaction_type_counts": {
+    "PAYMENT": 2151495,
+    "CASH_OUT": 2237500,
+    "CASH_IN": 1399284,
+    "TRANSFER": 532909,
+    "DEBIT": 41432
+  },
+  "invalid_fraud_labels": 0,
+  "negative_amount_count": 0,
+  "negative_step_count": 0,
+  "negative_balance_values_count": 0,
+  "duplicate_rows_within_chunks": 0,
+  "eda_sample_rows": 64000,
+  "note": "Duplicate detection was performed within each chunk only. Fraud rate by type uses the EDA sample; class counts use all rows."
+}

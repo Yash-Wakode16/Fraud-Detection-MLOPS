@@ -1,0 +1,37 @@
+{
+  "original_rows_processed": 6362620,
+  "sample_rows": 636262,
+  "sample_percentage": 10.0,
+  "training_rows": 509009,
+  "testing_rows": 127253,
+  "feature_columns": [
+    "step",
+    "type",
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "errorBalanceOrig",
+    "errorBalanceDest"
+  ],
+  "target_column": "isFraud",
+  "training_class_counts": {
+    "0": 508336,
+    "1": 673
+  },
+  "testing_class_counts": {
+    "0": 127085,
+    "1": 168
+  },
+  "training_fraud_rate_percent": 0.1322,
+  "testing_fraud_rate_percent": 0.132,
+  "split": "80% training / 20% testing",
+  "random_state": 42,
+  "excluded_columns": [
+    "nameOrig",
+    "nameDest",
+    "isFlaggedFraud"
+  ],
+  "important_note": "Balance-based features use post-transaction balances from PaySim. Their availability must be verified before real-time deployment."
+}

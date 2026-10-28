@@ -1,0 +1,27 @@
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node.js
+frontend/node_modules/
+frontend/dist/
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Large datasets
+data/raw/*
+data/processed/*.csv
+
+# Local experiment tracking
+mlruns/
+
+# OS files
+.DS_Store
+Thumbs.db
